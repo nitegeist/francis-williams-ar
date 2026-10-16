@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 0,
+    "width": 958,
+    "height": 1277,
+    "isRotated": true,
+    "originalWidth": 958,
+    "originalHeight": 1359
+  },
+  "imagePath": "image-targets/Franno_luminance.png",
+  "metadata": null,
+  "name": "Franno",
+  "resources": {
+    "originalImage": "Franno_original.png",
+    "croppedImage": "Franno_cropped.png",
+    "thumbnailImage": "Franno_thumbnail.png",
+    "luminanceImage": "Franno_luminance.png"
+  },
+  "created": 1791654801971,
+  "updated": 1791655661089
+}
