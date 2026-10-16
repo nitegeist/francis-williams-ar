@@ -11,7 +11,38 @@
 				color: #ffffff;
 				font: 600 16px/1.2 sans-serif;
 			}
+			#camera-status {
+				position: fixed;
+				z-index: 10;
+				left: 50%;
+				bottom: max(20px, env(safe-area-inset-bottom));
+				transform: translateX(-50%);
+				width: max-content;
+				max-width: calc(100vw - 40px);
+				padding: 14px;
+				border: 1px solid rgba(255, 255, 255, 0.7);
+				border-radius: 6px;
+				background: rgba(0, 0, 0, 0.88);
+				color: #ffffff;
+				font: 400 14px/1.4 sans-serif;
+				text-align: center;
+			}
+			#camera-status p {
+				margin: 0 0 10px;
+			}
+			#camera-retry {
+				padding: 8px 12px;
+				border: 1px solid rgba(255, 255, 255, 0.7);
+				border-radius: 4px;
+				background: #ffffff;
+				color: #111111;
+				font: 600 14px/1.2 sans-serif;
+			}
 			#audio-enable:focus-visible {
 				outline: 3px solid #ffffff;
 				outline-offset: 3px;
-			}</style><script crossorigin="anonymous" src="./external/runtime/runtime.js"></script><script crossorigin="anonymous" src="./external/xr/xr.js" async="true" data-preload-chunks="slam"></script></head><body><button id="audio-enable" type="button">Tap to begin</button><script src="bundle.js"></script></body></html>
+			}
+			#camera-retry:focus-visible {
+				outline: 3px solid #ffffff;
+				outline-offset: 3px;
+			}</style><script crossorigin="anonymous" src="./external/runtime/runtime.js"></script><script crossorigin="anonymous" src="./external/xr/xr.js" async="true" data-preload-chunks="slam"></script></head><body><button id="audio-enable" type="button" hidden>Tap to begin</button><div id="camera-status" role="status" aria-live="polite"><p id="camera-status-text">Starting camera...</p><button id="camera-retry" type="button" hidden>Try again</button></div><script src="bundle.js"></script></body></html>
